@@ -2,8 +2,8 @@ import pygame, random
 from pygame.locals import *
 import os
 
-SCREEN_WIDTH = 640
-SCREEN_HEIGHT = 480
+SCREEN_WIDTH = 800
+SCREEN_HEIGHT = 600
 FADE_SPEED = 10
 
 
