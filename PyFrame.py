@@ -62,7 +62,7 @@ def main():
             if i==3:
                 i=1
 
-        print(photo_group.sprites())
+        photo.update()
         photo_group.draw(screen)
         pygame.display.update()
 
