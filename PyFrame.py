@@ -20,12 +20,9 @@ class Photo(pygame.sprite.Sprite):
         self.rect[0] = 0
         self.rect[1] = 0
 
-        print(self.alpha)
-
     def update(self):
         self.alpha -= FADE_SPEED
         self.image.set_alpha(self.alpha)
-        print(self.alpha)
 
 
 def is_off_screen(sprite):

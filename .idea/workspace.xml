@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="422c7176-74ef-4511-bb1b-4f4404d49ddd" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/PyFrame.py" beforeDir="false" afterPath="$PROJECT_DIR$/PyFrame.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -88,7 +87,19 @@
       <option name="presentableId" value="Default" />
       <updated>1605580404710</updated>
     </task>
+    <task id="LOCAL-00001" summary="update animation">
+      <created>1607864571618</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1607864571618</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="update animation" />
+    <option name="LAST_COMMIT_MESSAGE" value="update animation" />
   </component>
   <component name="WindowStateProjectService">
     <state x="734" y="175" width="1092" height="706" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1605664208855">
