@@ -33,7 +33,7 @@ def main():
     screen = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT))
 
     photo_group = pygame.sprite.Group()
-    assetlist = ['assets/noise_1.jpg','assets/noise_2.jpg','assets/noise_3.jpg']
+    assetlist = ['assets/noise_1.bmp','assets/noise_2.bmp','assets/noise_3.bmp']
     for i in range(2):
         photo = Photo(assetlist[i])
         photo_group.add(photo)
