@@ -2,9 +2,10 @@ import pygame, random
 from pygame.locals import *
 import os
 
-SCREEN_WIDTH = 320
-SCREEN_HEIGHT = 240
+SCREEN_WIDTH = 480
+SCREEN_HEIGHT = 360
 FADE_SPEED = 10
+
 
 class Photo(pygame.sprite.Sprite):
 
@@ -30,7 +31,7 @@ def is_off_screen(sprite):
 
 def main():
     pygame.init()
-    screen = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT))
+    screen = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT), pygame.FULLSCREEN)
 
     photo_group = pygame.sprite.Group()
     assetlist = ['assets/noise_1.bmp','assets/noise_2.bmp','assets/noise_3.bmp']
