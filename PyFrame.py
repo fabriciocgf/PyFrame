@@ -31,7 +31,7 @@ def is_off_screen(sprite):
 
 def main():
     pygame.init()
-    screen = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT), pygame.FULLSCREEN)
+    screen = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT)) #, pygame.FULLSCREEN)
 
     photo_group = pygame.sprite.Group()
     assetlist = ['assets/noise_1.bmp','assets/noise_2.bmp','assets/noise_3.bmp']
