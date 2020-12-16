@@ -1,15 +1,17 @@
 import pygame, random
 from pygame.locals import *
 import os
+import stat
 
 SCREEN_WIDTH = 720
 SCREEN_HEIGHT = 486
 FADE_SPEED = 10
-
+duration_millis = 5 * 1000
 
 class Photo(pygame.sprite.Sprite):
 
     def __init__(self, photopath):
+        self.start_time = pygame.time.get_ticks()
         pygame.sprite.Sprite.__init__(self)
 
         self.image = pygame.image.load(photopath).convert_alpha()
@@ -26,21 +28,35 @@ class Photo(pygame.sprite.Sprite):
         self.image.set_alpha(self.alpha)
 
 
-def is_off_screen(sprite):
-    return sprite.alpha <= 0
+def time_out(sprite):
+    return (pygame.time.get_ticks() - sprite.start_time) >= duration_millis
+
+def get_files_from_directory(path: str):
+    files = []
+    for file in os.listdir(path):
+        file_path = os.path.join(path, file)
+        file_mode = os.stat(file_path)[stat.ST_MODE]
+        if stat.S_ISDIR(file_mode):
+            files.extend(FileLoader.get_files_from_directory(file_path))
+        elif stat.S_ISREG(file_mode):
+            _, ext = os.path.splitext(file)
+            if ext.lower() in ['.png', '.jpg', '.jpeg', '.gif', '.bmp']:
+                files.append(file_path)
+    return files
 
 def main():
     pygame.init()
-    screen = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT)) #, pygame.FULLSCREEN)
+    screen = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT))
 
     photo_group = pygame.sprite.Group()
-    assetlist = ['assets/noise_1.bmp','assets/noise_2.bmp','assets/noise_3.bmp']
+    assetlist = get_files_from_directory('assets')
+    print(assetlist)
     for i in range(2):
         photo = Photo(assetlist[i])
         photo_group.add(photo)
 
     clock = pygame.time.Clock()
-    i=0
+    i=2
     while True:
         clock.tick(30)
         for event in pygame.event.get():
@@ -51,13 +67,12 @@ def main():
                 if event.key == K_SPACE:
                     photo.update()
 
-
-        if is_off_screen(photo_group.sprites()[0]):
+        if time_out(photo_group.sprites()[0]):
             photo_group.remove(photo_group.sprites()[0])
-            new_photo = Photo(assetlist[i])
-            photo_group.add(new_photo)
+            photo = Photo(assetlist[i])
+            photo_group.add(photo)
             i += 1
-            if i==3:
+            if i==len(assetlist):
                 i=1
 
         photo.update()
