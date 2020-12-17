@@ -1,0 +1,38 @@
+# base-image for python on any machine using a template variable,
+# see more about dockerfile templates here: https://www.balena.io/docs/learn/develop/dockerfile/
+FROM balenalib/%%BALENA_MACHINE_NAME%%-python:3-stretch-run
+
+# use `install_packages` if you need to install dependencies,
+# for instance if you need git, just uncomment the line below.
+RUN install_packages git
+
+# Set our working directory
+WORKDIR /usr/src/app
+
+# Copy requirements.txt first for better cache on later pushes
+# COPY requirements.txt requirements.txt
+
+# RUN sudo apt-get update && apt-get install -y python3-pygame
+
+# RUN sudo apt-get install -y libsdl2-2.0
+
+RUN sudo find /usr/lib/python3/dist-packages -type d -name 'pygame*' -prune -exec rm -rf {} +
+
+RUN sudo apt install -y libsdl2-dev libsdl2-image-dev libsdl2-mixer-dev libsdl2-ttf-dev libfreetype6-dev python3-setuptools python3-dev python3 libportmidi-dev
+RUN sudo apt-get build-dep -y libsdl2 libsdl2-image libsdl2-mixer libsdl2-ttf libfreetype6 python3 libportmidi0
+RUN git clone https://github.com/pygame/pygame.git
+RUN cd pygame
+RUN python3 setup.py -config -auto -sdl2
+RUN python3 setup.py install --user
+
+# pip install python deps from requirements.txt on the resin.io build server
+# RUN pip3 install pygame --pre
+
+# This will copy all files in our root to the working  directory in the container
+COPY . ./
+
+# Enable udevd so that plugged dynamic hardware devices show up in our container.
+ENV UDEV=1
+
+# main.py will run when container starts up on the device
+CMD ["python3","src/PyFrame.py"]
