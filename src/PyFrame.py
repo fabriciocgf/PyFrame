@@ -6,7 +6,7 @@ import stat
 SCREEN_WIDTH = 720
 SCREEN_HEIGHT = 486
 FADE_SPEED = 10
-duration_millis = 1 * 1000
+duration_millis = 5 * 1000
 
 class Photo(pygame.sprite.Sprite):
 
@@ -78,7 +78,7 @@ def main():
     # screen = pygame.display.set_mode(size, pygame.FULLSCREEN)
 
     pygame.init()
-    screen = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT))
+    screen = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT), pygame.FULLSCREEN)
 
     photo_group = pygame.sprite.Group()
     assetlist = get_files_from_directory(os.path.join('..', 'assets'))
