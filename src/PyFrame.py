@@ -45,40 +45,8 @@ def get_files_from_directory(path: str):
     return files
 
 def main():
-    # pygame.init()
-    #
-    # disp_no = os.getenv('DISPLAY')
-    # if disp_no:
-    #     print
-    #     "I'm running under X display = {0}".format(disp_no)
-    #
-    # driver = 'directfb'
-    # if not os.getenv('SDL_VIDEODRIVER'):
-    #     os.putenv('SDL_VIDEODRIVER', driver)
-    #
-    # drivers = ['directfb', 'fbcon', 'svgalib']
-    #
-    # found = False
-    # for driver in drivers:
-    #     if not os.getenv('SDL_VIDEODRIVER'):
-    #         os.putenv('SDL_VIDEODRIVER', driver)
-    #     try:
-    #         pygame.display.init()
-    #     except pygame.error:
-    #         print
-    #         'Driver: {0} failed.'.format(driver)
-    #         continue
-    #     found = True
-    #     break
-    #
-    # if not found:
-    #     raise Exception('No suitable video driver found!')
-    #
-    # size = (pygame.display.Info().current_w, pygame.display.Info().current_h)
-    # screen = pygame.display.set_mode(size, pygame.FULLSCREEN)
-
     pygame.init()
-    screen = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT), pygame.FULLSCREEN)
+    screen = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT))#, pygame.FULLSCREEN)
 
     photo_group = pygame.sprite.Group()
     assetlist = get_files_from_directory(os.path.join('..', 'assets'))
@@ -97,7 +65,9 @@ def main():
 
             if event.type == KEYDOWN:
                 if event.key == K_SPACE:
-                    photo.update()
+                    pygame.quit()
+
+        photo_group.draw(screen)
 
         if time_out(photo_group.sprites()[0]):
             photo_group.remove(photo_group.sprites()[0])
@@ -108,7 +78,7 @@ def main():
                 i=1
 
         photo.update()
-        photo_group.draw(screen)
+
         pygame.display.update()
 
 if __name__ == '__main__':

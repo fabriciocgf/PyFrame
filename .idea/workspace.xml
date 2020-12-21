@@ -24,13 +24,13 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/PyFrame.py" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RunManager">
@@ -41,11 +41,21 @@
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
-      <option name="SDK_HOME" value="C:\ProgramData\Anaconda3\envs\PyFrame\python.exe" />
+      <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src" />
-      <option name="IS_MODULE_SDK" value="false" />
+      <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="net.ashald.envfile">
+        <option name="IS_ENABLED" value="false" />
+        <option name="IS_SUBST" value="false" />
+        <option name="IS_PATH_MACRO_SUPPORTED" value="false" />
+        <option name="IS_IGNORE_MISSING_FILES" value="false" />
+        <option name="IS_ENABLE_EXPERIMENTAL_INTEGRATIONS" value="false" />
+        <ENTRIES>
+          <ENTRY IS_ENABLED="true" PARSER="runconfig" />
+        </ENTRIES>
+      </EXTENSION>
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/PyFrame.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
@@ -55,18 +65,28 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
+    <configuration default="true" type="PythonConfigurationType" factoryName="Python" singleton="false">
       <module name="PyFrame" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
-      <option name="SDK_HOME" value="C:\ProgramData\Anaconda3\envs\PyFrame\python.exe" />
+      <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="false" />
+      <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="net.ashald.envfile">
+        <option name="IS_ENABLED" value="false" />
+        <option name="IS_SUBST" value="false" />
+        <option name="IS_PATH_MACRO_SUPPORTED" value="false" />
+        <option name="IS_IGNORE_MISSING_FILES" value="false" />
+        <option name="IS_ENABLE_EXPERIMENTAL_INTEGRATIONS" value="false" />
+        <ENTRIES>
+          <ENTRY IS_ENABLED="true" PARSER="runconfig" />
+        </ENTRIES>
+      </EXTENSION>
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/PyFrame.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
@@ -103,10 +123,15 @@
     <option name="LAST_COMMIT_MESSAGE" value="update animation" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="734" y="175" width="1092" height="706" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1608140306169">
-      <screen x="0" y="0" width="2560" height="1040" />
+    <state x="348" y="27" width="660" height="741" key="#PyFrame" timestamp="1608575594993">
+      <screen x="0" y="27" width="1366" height="741" />
+    </state>
+    <state x="348" y="27" width="660" height="741" key="#PyFrame/0.27.1366.741@0.27.1366.741" timestamp="1608575594993" />
+    <state x="383" y="152" width="983" height="556" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1608575511644">
+      <screen x="0" y="27" width="1366" height="741" />
     </state>
     <state x="734" y="175" width="1092" height="706" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.2560.1040@0.0.2560.1040" timestamp="1608140306169" />
+    <state x="383" y="152" width="983" height="556" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.27.1366.741@0.27.1366.741" timestamp="1608575511644" />
     <state x="934" y="114" key="CommitChangelistDialog2" timestamp="1607864569495">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
@@ -115,26 +140,31 @@
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
     <state x="1060" y="283" key="FileChooserDialogImpl/0.0.2560.1040@0.0.2560.1040" timestamp="1608140304603" />
-    <state width="2539" height="282" key="GridCell.Tab.0.bottom" timestamp="1608171803708">
-      <screen x="0" y="0" width="2560" height="1040" />
+    <state width="1343" height="172" key="GridCell.Tab.0.bottom" timestamp="1608576398419">
+      <screen x="0" y="27" width="1366" height="741" />
     </state>
     <state width="2539" height="282" key="GridCell.Tab.0.bottom/0.0.2560.1040@0.0.2560.1040" timestamp="1608171803708" />
-    <state width="2539" height="282" key="GridCell.Tab.0.center" timestamp="1608171803708">
-      <screen x="0" y="0" width="2560" height="1040" />
+    <state width="1343" height="172" key="GridCell.Tab.0.bottom/0.27.1366.741@0.27.1366.741" timestamp="1608576398419" />
+    <state width="1343" height="172" key="GridCell.Tab.0.center" timestamp="1608576398418">
+      <screen x="0" y="27" width="1366" height="741" />
     </state>
     <state width="2539" height="282" key="GridCell.Tab.0.center/0.0.2560.1040@0.0.2560.1040" timestamp="1608171803708" />
-    <state width="2539" height="282" key="GridCell.Tab.0.left" timestamp="1608171803708">
-      <screen x="0" y="0" width="2560" height="1040" />
+    <state width="1343" height="172" key="GridCell.Tab.0.center/0.27.1366.741@0.27.1366.741" timestamp="1608576398418" />
+    <state width="1343" height="172" key="GridCell.Tab.0.left" timestamp="1608576398418">
+      <screen x="0" y="27" width="1366" height="741" />
     </state>
     <state width="2539" height="282" key="GridCell.Tab.0.left/0.0.2560.1040@0.0.2560.1040" timestamp="1608171803708" />
-    <state width="2539" height="282" key="GridCell.Tab.0.right" timestamp="1608171803708">
-      <screen x="0" y="0" width="2560" height="1040" />
+    <state width="1343" height="172" key="GridCell.Tab.0.left/0.27.1366.741@0.27.1366.741" timestamp="1608576398418" />
+    <state width="1343" height="172" key="GridCell.Tab.0.right" timestamp="1608576398418">
+      <screen x="0" y="27" width="1366" height="741" />
     </state>
     <state width="2539" height="282" key="GridCell.Tab.0.right/0.0.2560.1040@0.0.2560.1040" timestamp="1608171803708" />
-    <state x="781" y="162" key="SettingsEditor" timestamp="1605664145456">
-      <screen x="0" y="0" width="2560" height="1040" />
+    <state width="1343" height="172" key="GridCell.Tab.0.right/0.27.1366.741@0.27.1366.741" timestamp="1608576398418" />
+    <state x="344" y="31" width="1022" height="737" key="SettingsEditor" timestamp="1608575696449">
+      <screen x="0" y="27" width="1366" height="741" />
     </state>
     <state x="781" y="162" key="SettingsEditor/0.0.2560.1040@0.0.2560.1040" timestamp="1605664145456" />
+    <state x="344" y="31" width="1022" height="737" key="SettingsEditor/0.27.1366.741@0.27.1366.741" timestamp="1608575696449" />
     <state x="710" y="269" key="com.intellij.ide.util.TipDialog" timestamp="1607837368498">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
