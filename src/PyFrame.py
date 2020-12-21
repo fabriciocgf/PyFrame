@@ -3,8 +3,8 @@ from pygame.locals import *
 import os
 import stat
 
-SCREEN_WIDTH = 640
-SCREEN_HEIGHT = 480
+SCREEN_WIDTH = 800
+SCREEN_HEIGHT = 600
 FADE_SPEED = 10
 duration_millis = 1 * 1000
 i=2
