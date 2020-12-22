@@ -73,10 +73,10 @@ def main():
                     pygame.quit()
 
         if time_out(photo_group.sprites()[-1],duration):
-            if photoindex % 2 == 0:
-                duration = photo_time_seg
-            else:
+            if completeList[photoindex].startswith('../assets'):
                 duration = transition_time_seg
+            else:
+                duration = photo_time_seg
             photo_group.remove(photo_group.sprites()[-1])
             photo = Photo(completeList[photoindex])
             photo_group.add(photo)
