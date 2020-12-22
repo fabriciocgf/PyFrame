@@ -46,7 +46,6 @@
       <change afterPath="$PROJECT_DIR$/photos/photo_7.bmp" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/photos/photo_8.bmp" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/photos/photo_9.bmp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -243,7 +242,21 @@
       <option name="project" value="LOCAL" />
       <updated>1608602817837</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="new time">
+      <created>1608602926486</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1608602926486</updated>
+    </task>
+    <task id="LOCAL-00014" summary="new time">
+      <created>1608603048033</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1608603048033</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -322,10 +335,10 @@
     </state>
     <state x="781" y="162" key="SettingsEditor/0.0.2560.1040@0.0.2560.1040" timestamp="1605664145456" />
     <state x="344" y="31" width="1022" height="737" key="SettingsEditor/0.27.1366.741@0.27.1366.741" timestamp="1608575696449" />
-    <state x="278" y="133" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1608602826742">
+    <state x="278" y="133" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1608603051247">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
-    <state x="278" y="133" width="800" height="535" key="Vcs.Push.Dialog.v2/0.27.1366.741@0.27.1366.741" timestamp="1608602826742" />
+    <state x="278" y="133" width="800" height="535" key="Vcs.Push.Dialog.v2/0.27.1366.741@0.27.1366.741" timestamp="1608603051247" />
     <state x="710" y="269" key="com.intellij.ide.util.TipDialog" timestamp="1607837368498">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>

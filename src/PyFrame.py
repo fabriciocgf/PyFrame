@@ -57,7 +57,6 @@ def main():
     photosList = get_files_from_directory(os.path.join('..', 'photos'))
     assetList = get_files_from_directory(os.path.join('..', 'assets'))
     completeList = complete_list(assetList, photosList)
-    print(completeList)
     for y in range(2):
         photo = Photo(completeList[y])
         photo_group.add(photo)
