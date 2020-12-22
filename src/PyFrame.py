@@ -7,7 +7,7 @@ SCREEN_WIDTH = 800
 SCREEN_HEIGHT = 600
 FADE_SPEED = 10
 transition_time_seg = 1
-photo_time_seg = 5
+photo_time_seg = 20
 
 class Photo(pygame.sprite.Sprite):
 
