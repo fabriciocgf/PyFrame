@@ -26,6 +26,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="422c7176-74ef-4511-bb1b-4f4404d49ddd" name="Default Changelist" comment="change resolution">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/PyFrame.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/PyFrame.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -44,17 +45,25 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1kOnFoltKuKDA1Wtk4Z3Z2Qbmwv" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/photos" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/photos" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="PyFrame" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
@@ -166,7 +175,21 @@
       <option name="project" value="LOCAL" />
       <updated>1608591345397</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="change resolution">
+      <created>1608591433988</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1608591433988</updated>
+    </task>
+    <task id="LOCAL-00007" summary="change resolution">
+      <created>1608591511018</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1608591511018</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -193,6 +216,7 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="update animation" />
     <MESSAGE value="change resolution" />
     <option name="LAST_COMMIT_MESSAGE" value="change resolution" />
@@ -215,35 +239,35 @@
       <screen x="0" y="0" width="2560" height="1040" />
     </state>
     <state x="1060" y="283" key="FileChooserDialogImpl/0.0.2560.1040@0.0.2560.1040" timestamp="1608140304603" />
-    <state width="1343" height="172" key="GridCell.Tab.0.bottom" timestamp="1608578028256">
+    <state width="1343" height="172" key="GridCell.Tab.0.bottom" timestamp="1608596459038">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
     <state width="2539" height="282" key="GridCell.Tab.0.bottom/0.0.2560.1040@0.0.2560.1040" timestamp="1608171803708" />
-    <state width="1343" height="172" key="GridCell.Tab.0.bottom/0.27.1366.741@0.27.1366.741" timestamp="1608578028256" />
-    <state width="1343" height="172" key="GridCell.Tab.0.center" timestamp="1608578028255">
+    <state width="1343" height="172" key="GridCell.Tab.0.bottom/0.27.1366.741@0.27.1366.741" timestamp="1608596459038" />
+    <state width="1343" height="172" key="GridCell.Tab.0.center" timestamp="1608596459037">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
     <state width="2539" height="282" key="GridCell.Tab.0.center/0.0.2560.1040@0.0.2560.1040" timestamp="1608171803708" />
-    <state width="1343" height="172" key="GridCell.Tab.0.center/0.27.1366.741@0.27.1366.741" timestamp="1608578028255" />
-    <state width="1343" height="172" key="GridCell.Tab.0.left" timestamp="1608578028254">
+    <state width="1343" height="172" key="GridCell.Tab.0.center/0.27.1366.741@0.27.1366.741" timestamp="1608596459037" />
+    <state width="1343" height="172" key="GridCell.Tab.0.left" timestamp="1608596459037">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
     <state width="2539" height="282" key="GridCell.Tab.0.left/0.0.2560.1040@0.0.2560.1040" timestamp="1608171803708" />
-    <state width="1343" height="172" key="GridCell.Tab.0.left/0.27.1366.741@0.27.1366.741" timestamp="1608578028254" />
-    <state width="1343" height="172" key="GridCell.Tab.0.right" timestamp="1608578028255">
+    <state width="1343" height="172" key="GridCell.Tab.0.left/0.27.1366.741@0.27.1366.741" timestamp="1608596459037" />
+    <state width="1343" height="172" key="GridCell.Tab.0.right" timestamp="1608596459038">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
     <state width="2539" height="282" key="GridCell.Tab.0.right/0.0.2560.1040@0.0.2560.1040" timestamp="1608171803708" />
-    <state width="1343" height="172" key="GridCell.Tab.0.right/0.27.1366.741@0.27.1366.741" timestamp="1608578028255" />
+    <state width="1343" height="172" key="GridCell.Tab.0.right/0.27.1366.741@0.27.1366.741" timestamp="1608596459038" />
     <state x="344" y="31" width="1022" height="737" key="SettingsEditor" timestamp="1608575696449">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
     <state x="781" y="162" key="SettingsEditor/0.0.2560.1040@0.0.2560.1040" timestamp="1605664145456" />
     <state x="344" y="31" width="1022" height="737" key="SettingsEditor/0.27.1366.741@0.27.1366.741" timestamp="1608575696449" />
-    <state x="278" y="133" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1608591351311">
+    <state x="278" y="133" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1608591515077">
       <screen x="0" y="27" width="1366" height="741" />
     </state>
-    <state x="278" y="133" width="800" height="535" key="Vcs.Push.Dialog.v2/0.27.1366.741@0.27.1366.741" timestamp="1608591351311" />
+    <state x="278" y="133" width="800" height="535" key="Vcs.Push.Dialog.v2/0.27.1366.741@0.27.1366.741" timestamp="1608591515077" />
     <state x="710" y="269" key="com.intellij.ide.util.TipDialog" timestamp="1607837368498">
       <screen x="0" y="0" width="2560" height="1040" />
     </state>

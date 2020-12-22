@@ -6,8 +6,8 @@ import stat
 SCREEN_WIDTH = 800
 SCREEN_HEIGHT = 600
 FADE_SPEED = 10
-duration_millis = 1 * 1000
-i=2
+transition_time_seg = 0.5
+photo_time_seg = 5
 
 class Photo(pygame.sprite.Sprite):
 
@@ -18,14 +18,13 @@ class Photo(pygame.sprite.Sprite):
         self.image = pygame.image.load(photopath).convert_alpha()
         self.image = pygame.transform.scale(self.image, (SCREEN_WIDTH, SCREEN_HEIGHT))
 
-
         self.rect = self.image.get_rect()
         self.rect[0] = 0
         self.rect[1] = 0
 
 
-def time_out(sprite):
-    return (pygame.time.get_ticks() - sprite.start_time) >= duration_millis
+def time_out(sprite, duration):
+    return (pygame.time.get_ticks() - sprite.start_time) >= duration * 1000
 
 def get_files_from_directory(path: str):
     files = []
@@ -40,18 +39,29 @@ def get_files_from_directory(path: str):
                 files.append(file_path)
     return files
 
+def complete_list(assets, photos):
+    completeList = []
+    for x in range(len(photos)):
+        randomint = random.randint(0, len(assets)-1)
+        completeList.append(photos[x])
+        completeList.append(assets[randomint])
+    return completeList
+
 def main():
     pygame.init()
     screen = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT))#, pygame.FULLSCREEN)
-
+    clock = pygame.time.Clock()
+    duration = transition_time_seg
+    photoindex = 0
     photo_group = pygame.sprite.Group()
-    assetlist = get_files_from_directory(os.path.join('..', 'photos'))
-    print(assetlist)
-    for i in range(2):
-        photo = Photo(assetlist[i])
+    photosList = get_files_from_directory(os.path.join('..', 'photos'))
+    assetList = get_files_from_directory(os.path.join('..', 'assets'))
+    completeList = complete_list(assetList, photosList)
+    print(completeList)
+    for y in range(2):
+        photo = Photo(completeList[y])
         photo_group.add(photo)
 
-    clock = pygame.time.Clock()
     while True:
         clock.tick(30)
         for event in pygame.event.get():
@@ -62,15 +72,17 @@ def main():
                 if event.key == K_SPACE:
                     pygame.quit()
 
-
-
-        if time_out(photo_group.sprites()[-1]):
-            photo_group.remove(photo_group.sprites()[0])
-            photo = Photo(assetlist[i])
+        if time_out(photo_group.sprites()[-1],duration):
+            if photoindex % 2 == 0:
+                duration = photo_time_seg
+            else:
+                duration = transition_time_seg
+            photo_group.remove(photo_group.sprites()[-1])
+            photo = Photo(completeList[photoindex])
             photo_group.add(photo)
-            i += 1
-            if i==len(assetlist):
-                i=1
+            photoindex += 1
+            if photoindex == len(completeList):
+                photoindex = 0
 
         photo_group.draw(screen)
         pygame.display.update()
