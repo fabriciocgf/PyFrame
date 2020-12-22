@@ -6,7 +6,7 @@ import stat
 SCREEN_WIDTH = 800
 SCREEN_HEIGHT = 600
 FADE_SPEED = 10
-transition_time_seg = 0.5
+transition_time_seg = 1
 photo_time_seg = 5
 
 class Photo(pygame.sprite.Sprite):
@@ -63,7 +63,7 @@ def main():
         photo_group.add(photo)
 
     while True:
-        clock.tick(30)
+        clock.tick(3)
         for event in pygame.event.get():
             if event.type == QUIT:
                 pygame.quit()
